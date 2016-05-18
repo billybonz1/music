@@ -1,0 +1,602 @@
+body {
+    background-image: url(../img/fon.png);
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    font-family: PT Sans;
+}
+
+header {
+    #col1 {
+        img {
+        margin-top: 25px;
+        }
+    }
+    #col2 {
+        h1 {
+        margin-top: 25px;
+        }
+        h1:hover {
+            color: #802525;
+            transition-duration: .5s;
+        }
+    }
+    #col3 {
+        margin-top: 10px;
+        a {
+            text-decoration: none;
+            border-bottom: 1px dashed #000;
+            color: #000;
+            margin-left: 40px;
+            float: right;
+        }
+        a:hover {
+            color: #802525;
+            transition-duration: .5s;
+        }
+        .button {
+            cursor: pointer;
+            width: 140px;
+            height: 65px;
+            -webkit-transform: skew(-20deg);
+            -moz-transform: skew(-20deg);
+            -o-transform: skew(-20deg);
+            background-color: #8b1d1d;
+            border-radius: 7px;
+            -webkit-box-shadow: 8px 12px 0px 3px rgba(245,211,125,1);
+            -moz-box-shadow: 8px 12px 0px 3px rgba(245,211,125,1);
+            box-shadow: 8px 12px 0px 3px rgba(245,211,125,1);
+            float: right;
+            margin-top: 10px;
+            p {
+            -webkit-transform: skew(20deg);
+            -moz-transform: skew(20deg);
+            -o-transform: skew(20deg);
+             color: #fff;
+             text-align: center;
+             margin-top: 15px;
+             line-height: 18px;
+             font-size: 17px;
+            }
+        }
+        .button:hover {
+            background: #00d108;
+            transition-duration: .5s;
+        }
+    }
+    button.top_menu_button {
+            color: #fff;
+            background: none;
+            border: 0;
+            font-size: 25px;
+        }
+    #nav{
+        float: left;
+        width: 97%;
+        list-style: none;
+        font-weight: bold;
+        margin-left: 12px;
+        margin-bottom: 10px;
+        margin-top: 35px;
+        background: rgba(128, 37, 37, 0.46);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+         li{
+        float:left;
+        margin-right: 37px;
+        position:relative;
+        display:block;
+        }
+         li a{
+         display: block;
+        line-height: 40px;
+        height: 55px;
+        padding: 5px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 3px;
+        }
+        li hr {
+            margin-top: -5px;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            bottom: 15px;
+        }
+         li a:hover{
+        color:#721515;
+        background:#ffffff;
+        }
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+         ul{
+            border-radius: 0px;
+            text-align: center;
+            background: #fdf0c4;
+            width: 250px;
+            list-style: none;
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            -webkit-transition: 0.25s linear opacity;
+        }
+        li ul a {
+        color: #000;
+        }
+        ul li{
+        float:none;
+        }
+        ul a{
+        white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+        display:block;
+        }
+         li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+        left:0; /* Приносим его обратно на экран, когда нужно */
+        opacity:1; /* Делаем непрозрачным */
+        z-index: 100;
+             padding: 0;
+         }
+        li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+        background:#fff;
+        text-decoration:underline;
+        color: #721515;
+        }
+         li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+        text-decoration:none;
+        -webkit-transition:-webkit-transform 0.075s linear;
+        }
+        li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+        background:#333;
+        background:rgba(51,51,51,0.75); /* Будет полупрозрачным */
+        text-decoration:underline;
+        -moz-transform:scale(1.05);
+        -webkit-transform:scale(1.05);
+        }
+
+    }
+}
+.slider_main .owl-pagination {
+display: inline-flex;
+padding: 16px 20px 12px 30px;
+background: rgb(172, 32, 32);
+border-bottom-left-radius: 10px;
+float: right;
+margin-right: 103px;
+    .owl-page {
+    height: 15px;
+    width: 15px;
+    background: #484848;
+    border-radius: 20px;
+    margin-right: 5px;
+    }
+    .owl-page.active {
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    border-radius: 20px;
+    }
+}
+.item div {
+    h1 {
+    position: absolute;
+    top: 265px;
+    left: 0px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 244px 30px 65px;
+    }  
+} 
+.slider_main {
+    background: #505050;
+    margin-top: -10px;
+}
+.Ensh {
+    p{
+    font-size: 15px;
+    color: #8e8e8e;
+    margin-top: -10px;
+        span {
+        font-size: 28px;
+        color: #ffefc4;
+        }
+    }
+}
+.President {
+    border: 1px solid #8e8e8e;
+    padding: 20px;
+    width: 345px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    img {
+    float: left;
+    padding-bottom: 130px;
+    margin-right: 30px;
+    margin-top: 30px;
+    }
+    p {
+      color: #ffefc4;
+        span {
+            color: #8e8e8e;
+        }
+    }
+}
+.main-slider {
+    margin-top: -10px;
+    margin-left: 12px;
+}
+
+section {
+    .slider_main img {
+    margin-top: -10px;
+    margin-left: -6px;
+    width: 100%;
+    }
+    #span2 {
+        color: #8b3333;
+        border-bottom: 1px solid #8b3333;
+    }
+    .podr {
+        color: #8b3333;
+        border-bottom: 1px solid #8b3333;
+        width: 75px;
+        cursor: pointer;
+    }
+    .News {
+        a {
+            color: #8b3333;
+            text-decoration: underline;
+        }
+        h1 {
+            color: #8e8e8e;
+        }
+        #news1 {
+            .line {
+                color: #8e8e8e;
+                background-color: #8e8e8e;
+                height: 6px;
+                overflow: hidden;
+            }
+            div {
+                padding-left: 0;
+                cursor: pointer;
+                background-color: #fff;
+            }
+            h2 {
+                color:#8b3333;
+                text-decoration: underline;
+            }
+            p {
+                  color: #8e8e8e;
+              }
+            img {
+                float: left;
+                margin-left: 10px;
+                margin-top: 10px;
+                padding-right: 30px;
+                padding-bottom: 50px;
+            }
+        }
+          #news2 {
+              .line {
+                color: #8e8e8e;
+                background-color: #8e8e8e;
+                height: 6px;
+                overflow: hidden;
+            }
+            div {
+                padding-right: 0;
+                cursor: pointer;
+                background-color: #fff;
+            }
+              h2 {
+                color:#8b3333;
+                text-decoration: underline;
+            }
+              p {
+                  color: #8e8e8e;
+              }
+            img {
+                float: left;
+                margin-left: 10px;
+                margin-top: 10px;
+                padding-right: 30px;
+                padding-bottom: 50px;
+            }
+        }
+        #news1 div:hover {
+            -webkit-box-shadow: 0px 20px 60px -11px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 20px 60px -11px rgba(0,0,0,1);
+            box-shadow: 0px 20px 60px -11px rgba(0,0,0,1);
+            transition-duration: .3s;
+            .line {
+                background-color: #8b3333;
+                color: #8b3333;
+            }
+        }
+        #news2 div:hover {
+            -webkit-box-shadow: 0px 20px 60px -11px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 20px 60px -11px rgba(0,0,0,1);
+            box-shadow: 0px 20px 60px -11px rgba(0,0,0,1);
+            transition-duration: .3s;
+            .line {
+                background-color: #8b3333;
+                color: #8b3333;
+            }
+        }
+    }
+    .partners {
+        h1{
+            color: #8e8e8e;
+            float: left;
+            width: 100%;
+        }
+        .slider_container img {
+            max-width: 100%;
+        }
+
+        .next_button,
+        .prev_button {
+            color: #8e8e8e;
+            font-size: 25px;
+            position: absolute;
+            z-index: 10;
+            cursor: pointer;
+            top: 96%;
+            padding: 0 25px;
+            border-radius: 10px;
+        }
+
+        .slide_container {
+            position: relative;
+        }
+
+        .next_button {
+            right: 20px;
+        }
+
+        .prev_button {
+            left: 20px;
+        }
+    }
+}
+
+#foo_left {
+    p {
+        color: #8e8e8e;
+    }
+}
+
+#foo_right{
+    p {
+        float: right;
+        margin-top: 50px;
+        color: #8e8e8e;
+    }
+    a {
+        color: #8e8e8e;
+        text-decoration: underline;
+    }
+}
+
+.New_article {
+    h1 {
+        background-color: #4d4d4d;
+        width: 100%;
+        font-size: 40px;
+        color: #fff;
+        height: 65px;
+        margin-top: -20px;
+        line-height: 55px;
+        text-indent: 50px;
+        border-radius: 8px;
+    }
+    h3 {
+        font-size: 20px;
+        color: #8e8e8e;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    .new_projects {
+         padding-right: 0;
+         cursor: pointer;
+         background-color: #fff;    
+        h2 {
+         color: #8e8e8e;
+         text-decoration: underline;
+        }
+        p {
+         color: #8e8e8e;
+        }
+        .line2 {
+         color: #8e8e8e;
+         background-color: #8e8e8e;
+         height: 6px;
+         overflow: hidden;
+        }
+    }
+    .article2 {
+        h3 {
+        margin-top: -33px;
+        margin-left: 80px;
+        font-size: 20px;
+        color: #8e8e8e;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        }
+        .nav {
+            float: right;
+            div {
+                background: rgba(249, 249, 249, 0.24);
+                padding: 3px 10px 10px 9px;
+                border: 1px solid #8e8e8e;
+                cursor: pointer;
+            }
+            div p {
+             color: #8e8e8e;
+            }
+            div h2 {
+             color: #000;
+             text-decoration: underline;
+            }
+        }
+    }
+    .article {
+        .line {
+                color: #8e8e8e;
+                background-color: #8e8e8e;
+                height: 6px;
+                overflow: hidden;
+            }
+            div {
+                padding-right: 0;
+                cursor: pointer;
+                background-color: #fff;
+                
+            }
+              h2 {
+                color:#8b3333;
+                text-decoration: underline;
+            }
+              p {
+                  color: #8e8e8e;
+              }
+            img {
+                float: left;
+                margin-left: 10px;
+                margin-top: 10px;
+                padding-right: 30px;
+                padding-bottom: 50px;
+            }
+        .but {
+            margin-right: 20px;
+            width: 60px;
+            height: 35px;
+            display: inline-block;
+            background: none;
+        }
+        .but p {
+            color: #8b3333;
+            text-decoration: none;
+            font-size: 25px;
+            background: none;
+            text-indent: 24px;
+            margin-top: 0;
+        }
+        .but:hover {
+            width: 60px;
+            height: 35px;
+            transform: skew(-20deg);
+            background-color: #8b1d1d;
+            border-radius: 7px;
+            color: #fff;
+            p{
+                color: #fff;
+            }
+        }
+        .but:active {
+             width: 60px;
+            height: 35px;
+            transform: skew(-20deg);
+            background-color: #8b1d1d;
+            border-radius: 7px;
+            color: #fff;
+        }
+    }
+    .article div:hover {
+            -webkit-box-shadow: 0px 20px 60px -11px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 20px 60px -11px rgba(0,0,0,1);
+            box-shadow: 0px 20px 60px -11px rgba(0,0,0,1);
+        .line {
+                background-color: #8b3333;
+                color: #8b3333;
+            }
+    }
+}
+.project {
+    .slider_project {
+        img {
+        margin-top: -39px;
+        margin-left: -30px;
+        }
+        div {
+        float: right;
+        position: absolute;
+        left: 65%;
+        bottom: 86%;
+        }
+        p {
+        color: #fff;
+            span {
+            font-size: 35px;
+            }
+        }
+        .button1 {
+               cursor: pointer;
+                width: 140px;
+                height: 56px;
+                -webkit-transform: skew(-20deg);
+                -moz-transform: skew(-20deg);
+                -o-transform: skew(-20deg);
+                background-color: #00d108;
+                border-radius: 7px;
+                float: right;
+                position: absolute;
+                top: 200px;
+                left: 5px;
+            p {
+            -webkit-transform: skew(20deg);
+            -moz-transform: skew(20deg);
+            -o-transform: skew(20deg);
+             color: #fff;
+             text-align: center;
+             margin-top: 11px;
+             line-height: 18px;
+             font-size: 17px;
+            }
+        }
+    }
+}
+    .content {
+        #left_content {
+            h1 {
+            color: #8b3333;
+            text-decoration: underline;
+            font-size: 35px;
+            }
+            div {
+            width: 170px;
+            display: inline-block;
+            margin-right: 20px;
+                p span {
+                color: #8b3333;
+                text-decoration: underline;
+                }
+            }
+            p {
+                color: #8e8e8e;
+            }
+        }
+        #right_content {
+            div {
+            border: 2px solid #8e8e8e;
+            padding-left: 15px;
+            cursor: pointer;
+            margin-bottom: -1px;
+                p {
+                    color: #8e8e8e;
+                    .span1 {
+                    font-size: 16px;
+                    color: #00d108;   
+                    }
+                    .span2 {
+                    color: #000;
+                    }
+                }
+            }
+            div:hover {
+                background: #fff;
+                border: 2px solid #00d108;
+                transition-duration: .3s;
+            }
+        }
+    }
