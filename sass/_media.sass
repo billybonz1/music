@@ -10,7 +10,20 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-
+	.top_menu
+		ul
+			padding: 0
+			height: 0
+			transition: .2s all
+			overflow: hidden
+			margin-top: 80px
+			&.active
+				height: 420px
+			li
+				width: 100%
+				text-align: center
+				ul
+					display: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
