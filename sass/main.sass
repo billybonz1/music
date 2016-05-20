@@ -1,0 +1,538 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+body
+	max-height: 100%
+
+
+//Custom Styles Here
+
++font-face("Kundera", "../fonts/Kundera/Kundera", $file-formats: eot woff ttf)
++font-face("Kunderai", "../fonts/Kunderai/Kunderai", $file-formats: eot woff ttf)
+body
+	background-image: url(../img/fon.png)
+	background-size: 100%
+	height: 100%
+	width: 100%
+	font-family: PT Sans
+.inner
+	max-width: 989px
+	margin: 0 auto
+header
+	#col1 img
+		margin-top: 25px
+	#col2 h1
+		margin-top: 25px
+		font-family: Kundera
+		&:hover
+			color: #802525
+			-webkit-transition-duration: .5s
+			transition-duration: .5s
+	#col3
+		margin-top: 10px
+		a
+			text-decoration: none
+			border-bottom: 1px dashed #000
+			color: #000
+			margin-left: 40px
+			float: right
+			&:hover
+				color: #802525
+				-webkit-transition-duration: .5s
+				transition-duration: .5s
+		.button
+			cursor: pointer
+			width: 140px
+			height: 65px
+			transform: skew(-20deg)
+			background-color: #8b1d1d
+			border-radius: 7px
+			box-shadow: 8px 12px 0px 3px #f5d37d
+			float: right
+			margin-top: 10px
+			p
+				transform: skew(20deg)
+				color: #fff
+				text-align: left
+				margin-top: 9px
+				margin-left: 20px
+				line-height: 25px
+				font-size: 17px
+			&:hover
+				background: #00d108
+				-webkit-transition-duration: .5s
+				transition-duration: .5s
+	button.top_menu_button
+		color: #fff
+		background: none
+		border: 0
+		font-size: 25px
+	#nav
+		width: 100%
+		list-style: none
+		font-weight: bold
+		margin: 0
+		margin-top: 35px
+		background: rgba(128, 37, 37, 0.46)
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+		li
+			margin-right: 15px
+			position: relative
+			display: inline-block
+			a
+				display: block
+				line-height: 40px
+				height: 55px
+				padding: 5px
+				color: #fff
+				text-decoration: none
+				border-radius: 3px
+				font-size: 15px
+				font-weight: 500
+			hr
+				margin-top: -5px
+				padding: 0
+				margin: 0
+				position: relative
+				bottom: 15px
+			a:hover
+				color: #721515
+				background: #ffffff
+		ul
+			border-radius: 0px
+			text-align: center
+			background: #fdf0c4
+			width: 250px
+			list-style: none
+			position: absolute
+			left: -9999px
+			opacity: 0
+			-webkit-transition: 0.25s linear opacity
+		li ul a
+			color: #000
+		ul
+			li
+				float: none
+			a
+				white-space: nowrap
+				display: block
+		li:hover
+			ul
+				left: 0
+				opacity: 1
+				z-index: 100
+				padding: 0
+			a
+
+				background: #fff
+				text-decoration: underline
+				color: #721515
+			ul
+				a
+					text-decoration: none
+					-webkit-transition: -webkit-transform 0.075s linear
+				li a:hover
+
+					background: #333
+					background: rgba(51, 51, 51, 0.75)
+
+					text-decoration: underline
+					-moz-transform: scale(1.05)
+					-webkit-transform: scale(1.05)
+.slider_main
+	max-height: 329px
+	.item img
+		width: 100%
+	.inner
+		background: url(../img/music.jpg) no-repeat 554px 0
+.slider_main
+	background: #4C4C4C
+	margin-bottom: 50px
+	.owl-pagination
+		display: block
+		padding: 14px 10px 12px 10px
+		background: #ac2020
+		border-bottom-left-radius: 10px
+		float: right
+		max-height: 50px
+		.owl-page
+			height: 11px
+			width: 11px
+			background: #484848
+			border-radius: 20px
+			margin: 0 8px
+			display: inline-block
+			box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.5)
+			&.active
+				background: #fff
+
+.item div h1
+	position: absolute
+	bottom: 0px
+	left: 0px
+	width: 100%
+	color: #fff
+	background: rgba(0, 0, 0, 0.5)
+	padding: 10px 0px 10px 35px
+	line-height: 50px
+	margin: 0
+
+
+
+
+.Ensh
+	.q1,.q2
+		width: 17px
+		height: 14px
+		display: inline-block
+		position: relative
+	.q1
+		background: url(../img/q1.png)
+		top: -4px
+		margin-right: 10px
+	.q2
+		background: url(../img/q2.png)
+		margin-left: 10px
+		top: 4px
+	p
+		font-size: 20px
+		color: #8e8e8e
+		margin-top: 20px
+		font-family: Kunderai
+		span
+			font-size: 28px
+			color: #ffefc4
+		.author
+			font-size: 17px
+			font-weight: normal
+
+.President
+	border: 1px solid #8e8e8e
+	padding: 20px
+	width: 100%
+	margin-bottom: 10px
+	border-radius: 16px
+	img
+		float: left
+		padding-bottom: 130px
+		margin-right: 30px
+		margin-top: 30px
+	p
+		color: #ffefc4
+		span
+			color: #8e8e8e
+
+.main-slider
+
+
+section
+	.slider_main img
+		margin-top: -10px
+		margin-left: -6px
+		width: 100%
+	#span2
+		color: #8b3333
+		border-bottom: 1px solid #8b3333
+	.podr
+		color: #8b3333
+		border-bottom: 1px solid #8b3333
+		width: 75px
+		cursor: pointer
+	.News
+		a
+			color: #8b3333
+			text-decoration: underline
+		h1
+			color: #8e8e8e
+		#news1
+			.line
+				color: #8e8e8e
+				background-color: #8e8e8e
+				height: 6px
+				overflow: hidden
+			div
+				padding-left: 0
+				cursor: pointer
+				background-color: #fff
+			h2
+				color: #8b3333
+				text-decoration: underline
+			p
+				color: #8e8e8e
+			img
+				float: left
+				margin-left: 10px
+				margin-top: 10px
+				padding-right: 30px
+				padding-bottom: 50px
+		#news2
+			.line
+				color: #8e8e8e
+				background-color: #8e8e8e
+				height: 6px
+				overflow: hidden
+			div
+				padding-right: 0
+				cursor: pointer
+				background-color: #fff
+			h2
+				color: #8b3333
+				text-decoration: underline
+			p
+				color: #8e8e8e
+			img
+				float: left
+				margin-left: 10px
+				margin-top: 10px
+				padding-right: 30px
+				padding-bottom: 50px
+		#news1 div:hover, #news2 div:hover
+			box-shadow: 0px 20px 60px -11px black
+			-webkit-transition-duration: .3s
+			transition-duration: .3s
+			.line
+				background-color: #8b3333
+				color: #8b3333
+	.partners
+		h1
+			color: #8e8e8e
+			float: left
+			width: 100%
+		.slider_container img
+			max-width: 100%
+		.next_button, .prev_button
+			color: #8e8e8e
+			font-size: 25px
+			position: absolute
+			z-index: 10
+			cursor: pointer
+			top: 96%
+			padding: 0 25px
+			border-radius: 10px
+		.slide_container
+			position: relative
+		.next_button
+			right: 20px
+		.prev_button
+			left: 20px
+
+#foo_left p
+	color: #8e8e8e
+
+#foo_right
+	p
+		float: right
+		margin-top: 50px
+		color: #8e8e8e
+	a
+		color: #8e8e8e
+		text-decoration: underline
+
+.New_article
+	h1
+		background-color: #4d4d4d
+		width: 100%
+		font-size: 40px
+		color: #fff
+		height: 65px
+		margin-top: -20px
+		line-height: 55px
+		text-indent: 50px
+		border-radius: 8px
+	h3
+		font-size: 20px
+		color: #8e8e8e
+		padding-top: 25px
+		padding-bottom: 15px
+	.new_projects
+		padding-right: 0
+		cursor: pointer
+		background-color: #fff
+		h2
+			color: #8e8e8e
+			text-decoration: underline
+		p
+			color: #8e8e8e
+		.line2
+			color: #8e8e8e
+			background-color: #8e8e8e
+			height: 6px
+			overflow: hidden
+	.article2
+		h3
+			margin-top: -33px
+			margin-left: 80px
+			font-size: 20px
+			color: #8e8e8e
+			padding-top: 25px
+			padding-bottom: 15px
+		.nav
+			float: right
+			div
+				background: rgba(249, 249, 249, 0.24)
+				padding: 3px 10px 10px 9px
+				border: 1px solid #8e8e8e
+				cursor: pointer
+				p
+					color: #8e8e8e
+				h2
+					color: #000
+					text-decoration: underline
+	.article
+		.line
+			color: #8e8e8e
+			background-color: #8e8e8e
+			height: 6px
+			overflow: hidden
+		div
+			padding-right: 0
+			cursor: pointer
+			background-color: #fff
+		h2
+			color: #8b3333
+			text-decoration: underline
+		p
+			color: #8e8e8e
+		img
+			float: left
+			margin-left: 10px
+			margin-top: 10px
+			padding-right: 30px
+			padding-bottom: 50px
+		.but
+			margin-right: 20px
+			width: 60px
+			height: 35px
+			display: inline-block
+			background: none
+			p
+				color: #8b3333
+				text-decoration: none
+				font-size: 25px
+				background: none
+				text-indent: 24px
+				margin-top: 0
+			&:hover
+				width: 60px
+				height: 35px
+				-webkit-transform: skew(-20deg)
+				-ms-transform: skew(-20deg)
+				transform: skew(-20deg)
+				background-color: #8b1d1d
+				border-radius: 7px
+				color: #fff
+				p
+					color: #fff
+			&:active
+				width: 60px
+				height: 35px
+				-webkit-transform: skew(-20deg)
+				-ms-transform: skew(-20deg)
+				transform: skew(-20deg)
+				background-color: #8b1d1d
+				border-radius: 7px
+				color: #fff
+		div:hover
+			box-shadow: 0px 20px 60px -11px black
+			.line
+				background-color: #8b3333
+				color: #8b3333
+
+.project .slider_project
+	img
+		margin-top: -39px
+		margin-left: -30px
+	div
+		float: right
+		position: absolute
+		left: 65%
+		bottom: 86%
+	p
+		color: #fff
+		span
+			font-size: 35px
+	.button1
+		cursor: pointer
+		width: 140px
+		height: 56px
+		-webkit-transform: skew(-20deg)
+		-moz-transform: skew(-20deg)
+		-o-transform: skew(-20deg)
+		background-color: #00d108
+		border-radius: 7px
+		float: right
+		position: absolute
+		top: 200px
+		left: 5px
+		p
+			-webkit-transform: skew(20deg)
+			-moz-transform: skew(20deg)
+			-o-transform: skew(20deg)
+			color: #fff
+			text-align: center
+			margin-top: 11px
+			line-height: 18px
+			font-size: 17px
+
+.content
+	#left_content
+		h1
+			color: #8b3333
+			text-decoration: underline
+			font-size: 35px
+		div
+			width: 170px
+			display: inline-block
+			margin-right: 20px
+			p span
+				color: #8b3333
+				text-decoration: underline
+		p
+			color: #8e8e8e
+	#right_content div
+		border: 2px solid #8e8e8e
+		padding-left: 15px
+		cursor: pointer
+		margin-bottom: -1px
+		p
+			color: #8e8e8e
+			.span1
+				font-size: 16px
+				color: #00d108
+			.span2
+				color: #000
+		&:hover
+			background: #fff
+			border: 2px solid #00d108
+			-webkit-transition-duration: .3s
+			transition-duration: .3s
+
+
+//ALWAYS END
+@import "media"
