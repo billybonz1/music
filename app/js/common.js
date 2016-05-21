@@ -50,32 +50,26 @@ $(document).ready(function() {
 		responsiveClass:true,
 		responsive:{
 			0:{
-				items:1,
+				items:2,
 
 			},
 			600:{
-				items:1,
+				items:4,
 
 			},
 			1000:{
-				items:1,
+				items:5,
 
 			}
 		}
 	});
-	owl.on("mousewheel", ".owl-wrapper", function (e) {
-		if (e.deltaY > 0) {
+	$(".next_button,.prev_button").on("click", function (e) {
+		if ($(this).hasClass("prev_button")) {
 			owl.trigger("owl.prev");
 		} else {
 			owl.trigger("owl.next");
 		}
 		e.preventDefault();
-	});
-	$(".next_button").click(function(){
-		owl.trigger("owl.next");
-	});
-	$(".prev_button").click(function(){
-		owl.trigger("owl.prev");
 	});
     $(".main-slider").owlCarousel({
         items : 1,
@@ -95,6 +89,7 @@ $(document).ready(function() {
 			}
 		}
     });
+
 	//Кнопка "Наверх"
 	//Документация:
 	//http://api.jquery.com/scrolltop/
