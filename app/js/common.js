@@ -6,11 +6,7 @@ $(document).ready(function() {
      $(".top_menu_button").click(function(){
         $(".nav li").slideToggle();
     });
-	//Таймер обратного отсчета
-	//Документация: http://keith-wood.name/countdown.html
-	//<div class="countdown" date-time="2015-01-07"></div>
-	var austDay = new Date($(".countdown").attr("date-time"));
-	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
+
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
@@ -21,7 +17,7 @@ $(document).ready(function() {
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
+	//$(".top_mnu").navigation();
 
 	//Добавляет классы дочерним блокам .block для анимации
 	//Документация: http://imakewebthings.com/jquery-waypoints/
@@ -73,7 +69,6 @@ $(document).ready(function() {
 	});
     $(".main-slider").owlCarousel({
         items : 1,
-		responsiveClass:true,
 		responsive:{
 			0:{
 				items:1,

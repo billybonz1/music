@@ -36,10 +36,6 @@ gulp.task('scripts', function() {
 		'./app/libs/animate/animate-css.js',
 		'./app/libs/fancybox/jquery.fancybox.pack.js',
 		'./app/libs/owl-carousel/owl.carousel.min.js',
-		'./app/libs/countdown/jquery.plugin.js',
-		'./app/libs/countdown/jquery.countdown.min.js',
-		'./app/libs/countdown/jquery.countdown-ru.js',
-		'./app/libs/landing-nav/navigation.js'
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js

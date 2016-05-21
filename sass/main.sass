@@ -292,10 +292,12 @@ section
 		div.news-item
 			cursor: pointer
 			margin-bottom: 40px
-
+			&.soon > div
+				background: #f4f0d3
 			& > div
 				padding-top: 15px
 				background-color: #fff
+
 				& > div
 					padding: 0 10px
 					img
@@ -348,127 +350,7 @@ section
 		.prev_button
 			left: 5px
 
-#foo_left p
-	color: #8e8e8e
 
-#foo_right
-	p
-		float: right
-		margin-top: 50px
-		color: #8e8e8e
-	a
-		color: #8e8e8e
-		text-decoration: underline
-
-.New_article
-	h1
-		background-color: #4d4d4d
-		width: 100%
-		font-size: 40px
-		color: #fff
-		height: 65px
-		margin-top: -20px
-		line-height: 55px
-		text-indent: 50px
-		border-radius: 8px
-	h3
-		font-size: 20px
-		color: #8e8e8e
-		padding-top: 25px
-		padding-bottom: 15px
-	.new_projects
-		padding-right: 0
-		cursor: pointer
-		background-color: #fff
-		h2
-			color: #8e8e8e
-			text-decoration: underline
-		p
-			color: #8e8e8e
-		.line2
-			color: #8e8e8e
-			background-color: #8e8e8e
-			height: 6px
-			overflow: hidden
-	.article2
-		h3
-			margin-top: -33px
-			margin-left: 80px
-			font-size: 20px
-			color: #8e8e8e
-			padding-top: 25px
-			padding-bottom: 15px
-		.nav
-			float: right
-			div
-				background: rgba(249, 249, 249, 0.24)
-				padding: 3px 10px 10px 9px
-				border: 1px solid #8e8e8e
-				cursor: pointer
-				p
-					color: #8e8e8e
-				h2
-					color: #000
-					text-decoration: underline
-	.article
-		.line
-			color: #8e8e8e
-			background-color: #8e8e8e
-			height: 6px
-			overflow: hidden
-		div
-			padding-right: 0
-			cursor: pointer
-			background-color: #fff
-		h2
-			color: #8b3333
-			text-decoration: underline
-		p
-			color: #8e8e8e
-		img
-			float: left
-			margin-left: 10px
-			margin-top: 10px
-			padding-right: 30px
-			padding-bottom: 50px
-		.but
-			margin-right: 20px
-			width: 60px
-			height: 35px
-			display: inline-block
-			background: none
-			p
-				color: #8b3333
-				text-decoration: none
-				font-size: 25px
-				background: none
-				text-indent: 24px
-				margin-top: 0
-			&:hover
-				width: 60px
-				height: 35px
-				-webkit-transform: skew(-20deg)
-				-ms-transform: skew(-20deg)
-				transform: skew(-20deg)
-				background-color: #8b1d1d
-				border-radius: 7px
-				color: #fff
-				p
-					color: #fff
-			&:active
-				width: 60px
-				height: 35px
-				-webkit-transform: skew(-20deg)
-				-ms-transform: skew(-20deg)
-				transform: skew(-20deg)
-				background-color: #8b1d1d
-				border-radius: 7px
-				color: #fff
-		div:hover
-			box-shadow: 0px 20px 60px -11px black
-			.line
-				background-color: #8b3333
-				color: #8b3333
 
 .project .slider_project
 	img
@@ -514,5 +396,13 @@ section
 	border-bottom: 1px solid darken(red,20)
 footer
 	padding: 25px 0
+
+.page-title
+	background: #4c4c4c
+	font-size: 36px
+	color: #fefefe
+	font-family: Kundera
+	padding: 10px 0
+
 //ALWAYS END
 @import "media"
