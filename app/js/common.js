@@ -39,9 +39,9 @@ $(document).ready(function() {
 
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
-	var owl = $(".carousel");
-	owl.owlCarousel({
+	$(".carousel").owlCarousel({
 		items : 5,
+		nav: true,
         autoHeight : true,
 		responsiveClass:true,
 		responsive:{
@@ -58,14 +58,6 @@ $(document).ready(function() {
 
 			}
 		}
-	});
-	$(".next_button,.prev_button").on("click", function (e) {
-		if ($(this).hasClass("prev_button")) {
-			owl.trigger("owl.prev");
-		} else {
-			owl.trigger("owl.next");
-		}
-		e.preventDefault();
 	});
     $(".main-slider").owlCarousel({
         items : 1,
