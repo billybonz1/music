@@ -110,6 +110,6 @@ $(document).ready(function() {
     $(".top_menu_button").on("click",function(){
         $(this).toggleClass('active');
         $(this).find("i").toggleClass('fa-bars fa-times');
-        $(".top_menu ul").toggleClass("active");
+        $(".top_menu ul.mobile-menu").toggleClass("active");
     });
 });

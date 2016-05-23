@@ -16,24 +16,64 @@
 	#col2 h1
 		font-size: 24px
 	header #col3 .button
-		background: #c35a48
+		background: #b43325
+
+	.top_menu ul li a
+		font-size: 12.5px
+		padding: 10px 5px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.item div h1
+		font-size: 18px
+	.President
+		border-radius: 0
+		margin-top: 65px
+		font-size: 15px
+		img
+			width: 90px
+	.main-slider .owl-dots .owl-dot
+		width: 20px
+		height: 20px
+		margin: 0px 20px
+	.main-slider .owl-dots
+		width: 100%
+		border-radius: 0
+		max-width: none
+		text-align: center
+	#col1
+		padding-left: 3%
+	body
+		background-image: none
+	.nopadding
+		padding: 0
+	.col3 .button
+		position: absolute
+		top: -16px
+		z-index: 2
+		left: 50%
+		margin: 0
+		margin-left: -81px
+		box-shadow: 8px 7px 0 3px #f5d37d
+
 	button.top_menu_button
 		position: absolute
 		right: 14px
-		top: 38px
+		top: 61px
 		i
 			color: #fff
 	.top_menu
 		position: relative
-		ul
+		padding-top: 46px
+		ul.mobile-menu
 			padding: 0
 			height: 0
 			transition: .2s all
 			overflow: hidden
-			padding-top: 80px
-			background: #c35a48
+			padding-top: 0px
+			background: #b43325
 			margin: 0
 			width: 100%
+			border-radius: 0
 			&.active
 				height: 480px
 			li
@@ -41,9 +81,8 @@
 				text-align: center
 				ul
 					display: none
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+		ul.desktop-menu
+			background: #b43325
 	#col2 h1
 		font-size: 14px
 	/*Disable Animation on Mobile Devices*/

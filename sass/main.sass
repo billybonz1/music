@@ -119,6 +119,9 @@ a
 				-moz-user-select: none
 				-ms-user-select: none
 				user-select: none
+				transition: .2s all
+				&:hover
+					transform: scale(1.1)
 		.owl-dot
 			cursor: pointer
 			cursor: hand
@@ -642,7 +645,7 @@ footer
 		padding: 16px 15px
 		border-radius: 0 0 0 8px
 		.owl-dot
-			vertical-align: middle
+			vertical-align: top
 			width: 11px
 			height: 11px
 			background: #fff
@@ -848,5 +851,22 @@ footer
 				visibility: visible
 	span
 		color: #ffffff
+footer
+	background: no-repeat url(../img/footbg.jpg) right bottom
+
+.social
+	a
+		display: inline-block
+		vertical-align: top
+		width: 23px
+		height: 23px
+		color: #fff
+		background: #8d8c8c
+		text-align: center
+		text-decoration: none
+		line-height: 24px
+		transition: .2s all
+		&:hover
+			background: darken(#8d8c8c, 10)
 //ALWAYS END
 @import "media"
