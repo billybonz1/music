@@ -388,7 +388,7 @@ header
 	.inner
 		background: url(../img/music.jpg) no-repeat 554px 0
 	background: #4C4C4C
-	margin-bottom: 40px
+	margin-bottom: 0px
 	.project &
 		margin-bottom: 20px
 		max-height: 330px
@@ -420,7 +420,7 @@ header
 	padding: 10px 0px 10px 35px
 	line-height: 50px
 	margin: 0
-
+	font-size: 21px
 
 
 
@@ -517,10 +517,10 @@ section
 			left: 0
 			bottom: 0
 			margin: 0
-		div.news-item
+		.news-item
 			cursor: pointer
 			margin-bottom: 40px
-
+			display: block
 			&.soon > div
 				background: #f4f0d3
 			& > div
@@ -541,6 +541,8 @@ section
 			text-decoration: underline
 			margin: 0
 			font-size: 18px
+			.projects &
+				font-size: 24px
 			.news-page &
 				font-size: 24px
 		p
@@ -550,7 +552,7 @@ section
 
 		.news-item:hover
 			& > div
-				box-shadow: 0px 20px 60px -11px black
+				box-shadow: 0px 20px 40px -13px black
 				-webkit-transition-duration: .3s
 				transition-duration: .3s
 				.line
