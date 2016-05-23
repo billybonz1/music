@@ -253,6 +253,7 @@ body
 	width: 100%
 	font-family: PT Sans
 	background-color: #FFFAD9
+	font-size: 16px
 .inner
 	max-width: 989px
 	margin: 0 auto
@@ -262,54 +263,54 @@ header
 	z-index: 100
 	#col1 img
 		margin-top: 25px
-	#col2 h1
-		margin-top: 25px
-		font-family: Kundera
-		&:hover
-			color: #802525
-			-webkit-transition-duration: .5s
-			transition-duration: .5s
-	#col3
-		margin-top: 10px
-		a
-			text-decoration: none
-			border-bottom: 1px dashed #000
-			color: #000
-			margin-left: 40px
-			float: right
-			&:hover
-				color: #802525
-				-webkit-transition-duration: .5s
-				transition-duration: .5s
-		.button
-			cursor: pointer
-			width: 140px
-			height: 65px
-			transform: skew(-20deg)
-			background-color: #8b1d1d
-			border-radius: 7px
-			box-shadow: 8px 12px 0px 3px #f5d37d
-			float: right
-			margin-top: 24px
-			p
-				transform: skew(20deg)
-				color: #fff
-				text-align: left
-				margin-top: 9px
-				margin-left: 20px
-				line-height: 25px
-				font-size: 17px
-			&:hover
-				background: #00d108
-				-webkit-transition-duration: .5s
-				transition-duration: .5s
 	button.top_menu_button
 		color: #B56F6F
 		background: none
 		border: 0
 		font-size: 25px
 		outline: 0
+#col2 h1
+	margin-top: 25px
+	font-family: Kundera
+	font-size: 28px
+	&:hover
+		color: #802525
+		transition-duration: .5s
 
+.col3
+	margin-top: 10px
+	a
+		text-decoration: none
+		border-bottom: 1px dashed #000
+		color: #000
+		margin-left: 40px
+		float: right
+		&:hover
+			color: #802525
+			-webkit-transition-duration: .5s
+			transition-duration: .5s
+	.button
+		cursor: pointer
+		width: 140px
+		height: 65px
+		transform: skew(-20deg)
+		background-color: #8b1d1d
+		border-radius: 7px
+		box-shadow: 8px 12px 0px 3px #f5d37d
+		float: right
+		margin-top: 24px
+		p
+			transform: skew(20deg)
+			color: #fff
+			text-align: left
+			margin-top: 9px
+			margin-left: 20px
+			line-height: 25px
+			font-size: 17px
+		&:hover
+			background: #00d108
+			-webkit-transition-duration: .5s
+			transition-duration: .5s
 
 .top_menu
 	padding-top: 20px
@@ -384,6 +385,9 @@ header
 		background: url(../img/music.jpg) no-repeat 554px 0
 	background: #4C4C4C
 	margin-bottom: 40px
+	.project &
+		margin-bottom: 20px
+		max-height: 330px
 	.owl-pagination
 		display: block
 		padding: 14px 10px 12px 10px
@@ -490,6 +494,8 @@ section
 		.all-news
 			display: block
 			padding-bottom: 60px
+			&:hover
+				text-decoration: none
 		a
 			color: #8b3333
 			text-decoration: underline
@@ -501,15 +507,22 @@ section
 			background-color: #8e8e8e
 			height: 6px
 			overflow: hidden
+			position: absolute
+			width: 100%
+			left: 0
+			bottom: 0
+			margin: 0
 		div.news-item
 			cursor: pointer
 			margin-bottom: 40px
+
 			&.soon > div
 				background: #f4f0d3
 			& > div
 				padding-top: 15px
 				background-color: #fff
-
+				padding-bottom: 30px
+				position: relative
 				& > div
 					padding: 0 10px
 					img
@@ -517,11 +530,14 @@ section
 				h5
 					margin: 0
 					padding: 0px 0
-					font-size: 18px
+					font-size: 14px
 		h2
 			color: #8b3333
 			text-decoration: underline
 			margin: 0
+			font-size: 18px
+			.news-page &
+				font-size: 24px
 		p
 			color: #8e8e8e
 			font-size: 18px
@@ -535,6 +551,7 @@ section
 				.line
 					background-color: #8b3333
 					color: #8b3333
+
 	.partners
 		text-align: center
 		h1
@@ -543,7 +560,7 @@ section
 			width: 100%
 		.slider_container
 			position: relative
-			padding: 0 40px
+			padding: 0 60px
 		.slider_container img
 			max-width: 100%
 		.next_button, .prev_button
@@ -646,10 +663,190 @@ footer
 			margin-top: -11px
 		.owl-prev
 			background: url(../img/prev.jpg)
-			left: 0
+			left: -60px
 			width: 12px
 		.owl-next
 			background: url(../img/next.jpg)
-			right: 0
+			right: -60px
+.foo_right
+	text-align: right
+.sidebar-container
+	h3
+		font-size: 22px
+		color: #666666
+		margin-top: 0
+.last-news
+	border: 1px solid #d6c8b1
+	background: #fff
+	margin-bottom: 30px
+	p
+		font-size: 18px
+		font-family: Kundera
+		color: #4a4a4a
+		text-decoration: underline
+	&.support
+		.last-item__news
+			p
+				text-decoration: none
+				color: #8b8b8b
+				font-size: 18px
+				font-family: "PT Sans"
+				margin: 0
+				strong
+					display: block
+					font-size: 18px
+					color: #1e1e1e
+			&:hover
+				box-shadow: 0px 0px 2px 2px #94c434
+				background: #fffad9
+.support__textmini
+	font-size: 14px !important
+	color: #8b8b8b
+
+.support__title
+	font-size: 18px
+	font-weight: bold
+	color: #5b8110
+	text-transform: uppercase
+
+.last-item__news__date
+	font-size: 14px
+	color: #989898
+.last-item__news
+	padding: 15px
+	display: block
+	text-decoration: none
+	border-bottom: 1px solid #efecd5
+	transition: .2s all
+	&:hover
+		box-shadow: 0 20px 60px -11px #000
+		p
+			text-decoration: none
+#col1
+	padding: 0
+	img
+		width: 100%
+		max-width: 101px
+.project__img
+	position: relative
+	img
+		width: 100%
+	p
+		color: #fff
+		font-size: 24px
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		background: rgba(0,0,0,0.41)
+		margin: 0
+		padding: 14px 0 14px 20px
+		font-family: Kundera
+
+.facilities
+	color: #fffad9
+	font-size: 18px
+	padding-top: 20px
+	.price
+		font-size: 30px
+		font-weight: bold
+		&.now
+			font-size: 48px
+	span
+		display: inline-block
+		vertical-align: middle
+	.rub
+		font-size: 16px
+		font-weight: normal
+	.progress
+		height: 4px
+		background: #fffad9
+		position: relative
+		margin-bottom: 28px
+		div
+			position: absolute
+			left: 0
+			top: 0
+			width: 22%
+			height: 100%
+			background: #94c434
+.col3
+	.button.green
+		box-shadow: none
+		float: none
+		width: 216px
+		background: #94c434
+		&:hover
+			background: darken(#94c434,10)
+		p
+			font-size: 18px
+			line-height: 60px
+			margin: 0
+			text-align: center
+			color: #303030
+.project
+	h2
+		font-size: 36px
+		color: #921414
+		margin-top: 0
+		margin-bottom: 0
+	.header
+		font-size: 22px
+		color: #666666
+		margin: 0
+
+.buyin
+	padding-top: 15px
+	.buyin__item
+		text-decoration: none
+		display: block
+	.title
+		font-size: 18px
+		color: #921414
+		margin-top: 10px
+		text-decoration: underline
+	.price
+		color: #333131
+		font-size: 18px
+.project
+		font-size: 18px
+
+.pagination
+	margin-bottom: 30px
+	span,a
+		vertical-align: top
+		display: inline-block
+		width: 42px
+		height: 41px
+		position: relative
+		text-align: center
+		text-decoration: none
+		color: #616161
+		line-height: 38px
+		font-size: 24px
+		&:before
+			display: block
+			content: ""
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background: #b43325
+			border-radius: 5px
+			transform: skewX(-10deg)
+			z-index: -1
+			transition: .2s all
+	a
+		&:before
+			opacity: 0
+			visibility: hidden
+		&:hover
+			color: #fff
+			&:before
+				opacity: 1
+				visibility: visible
+	span
+		color: #ffffff
 //ALWAYS END
 @import "media"

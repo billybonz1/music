@@ -46,15 +46,19 @@ $(document).ready(function() {
 		responsiveClass:true,
 		responsive:{
 			0:{
-				items:2,
+				items:1,
+
+			},
+			340:{
+				items:1,
 
 			},
 			600:{
-				items:4,
+				items:3,
 
 			},
 			1000:{
-				items:5,
+				items:4,
 
 			}
 		}
